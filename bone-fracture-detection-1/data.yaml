@@ -1,0 +1,11 @@
+train: train/images
+val: valid/images
+test: test/images
+
+names: 
+  0: elbow positive
+  1: fingers positive
+  2: forearm fracture
+  3: humerus fracture
+  4: shoulder fracture
+  5: wrist positive
