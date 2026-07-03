@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YOLO26 OBB Detection</title>
+</head>
+
+<body>
+
+    <h2>YOLO26m-OBB ONNX Detector</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input
+            type="file"
+            name="image"
+            accept="image/*"
+            required>
+
+        <button type="submit">
+            Detect
+        </button>
+
+    </form>
+
+    {% if result_image %}
+
+    <h3>Detection Result</h3>
+
+    <img
+        src="{{ url_for('results', filename=result_image) }}"
+        width="800">
+
+    {% endif %}
+
+</body>
+
+</html>
